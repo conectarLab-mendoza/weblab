@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white:#eeeeee;
+    --color-bg: #E64088;
+    --color-primary: #38B6E8;
+    --color-secondary: #9C85BD;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+body{
+    text-align: center;
+    color: var(--color-white);
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.weblab{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    cursor: default;
+}
+
+.weblab:hover .web{
+    color: var(--color-bg);
+}
+.weblab:hover .lab{
+    color: var(--color-primary);
+}
+
+.weblab h1{
+    font-weight: 900;
+    font-size: 100px;
+    transition: all 500ms;
+}
+
+.web{
+    color: var(--color-primary);
+}
+
+.lab{
+    position: relative;
+    bottom: 35px;
+    letter-spacing: 15px;
+    color: var(--color-bg);
+}
+
+
+footer{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+footer h3 a{
+
+    text-decoration: underline;
+}
+
+footer h3 a:hover{
+    cursor: pointer;
+    color: var(--color-bg);
+    transition: all 500ms;
+}
+
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+.title img{
+    width: 30px;
+}
+
+.clases{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clases a.cardSecondary{
+    background-color: var(--color-primary);
+}
+
+
+.clases a{
+    background-color: var(--color-bg);
+    padding: 20px;
+    width: 30%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 200px;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    transition: all 500ms;
+}
+
+.clases a:hover{
+    background-color: var(--color-secondary);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--color-secondary);
+}
+
