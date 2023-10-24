@@ -27,6 +27,35 @@ body{
     font-family: 'Encode Sans', sans-serif;
 }
 
+.button {
+    height: 35px;
+    background: var(--color-secondary);
+    border: 2px solid var(--color-white);
+    padding: 24px;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-white);
+  }
+  
+  
+  
+  .button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 0px 0px 20px var(--color-white), 2px 2px var(--color-white);
+  }
+  
+  .button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+
+
 .weblab{
     background-color: white;
     display: flex;
@@ -103,6 +132,8 @@ footer h3 a:hover{
     padding: 50px;
     justify-content: center;
     align-items: center;
+    max-width: 1500px;
+    margin: auto;
 }
 
 
@@ -130,6 +161,150 @@ footer h3 a:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 20px var(--color-secondary);
 }
+
+/* CARDS */
+section.equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.card {
+    width: 250px;
+    height: 500px;
+    background: var(--color-primary);
+    border: 2px solid var(--color-font);
+    box-shadow: 4px 4px var(--color-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 16px 16px 16px;
+    gap: 10px;
+    transition: all 500ms;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(./images/bgkq.gif);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+
+
+
+.card-img {
+    /* clear and add new css */
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img{
+    position: relative;
+    width: 100%;
+    transition: 500ms all;
+    border: px var(--color-font) solid;
+}
+ 
+.card-title, .card-subtitle{
+    background-color: #9c85bdb9;
+    padding: 2px;
+}
+
+.card-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-font);
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    scroll-snap-type: mandatory;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto se corta */
+    max-height: 200px; /* Establece una altura máxima para la descripción */
+}
+
+/* Estilos para la barra de desplazamiento */
+.card-subtitle::-webkit-scrollbar {
+    width: 4px; /* Ancho de la barra de desplazamiento */
+}
+
+.card-subtitle::-webkit-scrollbar-thumb {
+    background-color: var(--box-shadow); /* Color del "pulgarcito" de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados del "pulgarcito" */
+}
+
+.card-subtitle::-webkit-scrollbar-track {
+    background-color: var(--color-canva); /* Color de fondo de la barra de desplazamiento */
+}
+
+
+.card-divider {
+    width: 100%;
+    border: 1px solid var(--color-font);
+    border-radius: 50px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.card-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-font);
+}
+
+.card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--box-shadow);
+}
+
+.card-footer .card-btn{
+    width: 100%;
+    padding: 8px;
+}
+
+.card-btn i{
+    cursor: pointer;
+    color: var(--color-bg);
+    font-size: 20px;
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--box-shadow), 2px 2px var(--color-font);
+}
+
+
+.card-img:hover {
+    transform: translateY(-15px);
+    
+}
+
+.card-img img:hover {
+    box-shadow: 0px 0px 20px var(--box-shadow), 2px 2px var(--color-font);   
+    transform: scale(2);
+    cursor: pointer;
+}
+
 
 
 @media (max-width: 600px) {
